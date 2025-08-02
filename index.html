@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2>ORDER</h2>
+        <div class="edit-cart-btn">EDIT CART</div>
+      </header>
+
+      <ul class="cart-list">
+        <!-- item will be here -->
+      </ul>
+
+      <section class="totals">
+        <!-- totals will be here -->
+      </section>
+
+      <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+
+      <section class="add-item-section">
+        <h3 id="addItemLabel">Add Item to Cart</h3>
+        <form class="add-item-form">
+          <input
+            type="text"
+            name="itemName"
+            id="itemName"
+            placeholder="Item Name"
+            required
+          />
+
+          <input
+            type="url"
+            name="itemImg"
+            id="itemImg"
+            placeholder="Image URL"
+          />
+
+          <div id="imgHint" style="font-size: 0.8rem; color: #666">
+            Use external image URL or leave blank for default.
+          </div>
+          
+          <input
+            type="number"
+            id="itemPrice"
+            name="itemPrice"
+            placeholder="Price (USD)"
+            min="0.01"
+            step="0.01"
+            required
+            aria-required="true"
+          />
+          <button type="submit">Add Item</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
